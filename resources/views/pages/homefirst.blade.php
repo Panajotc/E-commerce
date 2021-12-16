@@ -209,13 +209,13 @@
       </div>
     </div>
 
-  <div class="bg-indigo-100 ">
-    <div id="items2" class="ml-96 mt-28 flex wrap-flex">
+  <div class="bg-indigo-100  mt-28">
+    <div id="items2" class="ml-96 flex wrap-flex">
       <div class="ml-20">
        <img src="{{ URL::to('/images/chair.png') }}" class="bg-pink-100 rounded-full">
       </div>
      <div class="w-1/3">
-      <div class="header text-4xl text-blue-800 mt-24 mb-7">
+      <div class="header text-4xl text-blue-800  ">
         <h1>Unique Features Of leatest &Trending Poducts</h1>
       </div>
       <div>
@@ -242,7 +242,7 @@
         <h1>Featured Products</h1>
       </div>
 
-  <div id="items1" class="flex flex-wrap ml-96 ">
+  <div id="items1" class="flex flex-wrap  ml-96 ">
        <div class="ml-8">
          <livewire:itemstyle3 imag="{{ URL::to('/images/image10.png') }}" name="Cantilever chair" discount="$26.00" pric="$42.00"/>
        </div>
@@ -253,11 +253,11 @@
        <div class="ml-10">
          <livewire:itemstyle3 imag="{{ URL::to('/images/image10.png') }}" name="Cantilever chair" discount="$26.00" pric="$42.00"/>
        </div>
-       <div class="ml-10">
+       <div class="ml-10 mb-20">
           <livewire:itemstyle3 imag="{{ URL::to('/images/image10.png') }}" name="Cantilever chair" discount="$26.00" pric="$42.00"/>
        </div>
    </div>
-    <div id="items1" class="ml-96  mt-10 mb-32 flex flex-wrap"> 
+    <div id="items1" class="ml-96  mb-32 flex flex-wrap"> 
       
        <div class="ml-7">
          <livewire:itemstyle4 imag="{{ URL::to('/images/image13.png') }}"/> 
@@ -316,10 +316,10 @@
 
         </div>
       </div>
-      <div class="text-center text-4xl font-bold text-blue-800 ml-28 mt-32 mb-5">
+      <div class="text-center text-4xl font-bold text-blue-800 mb-10 ml-28 mt-32 ">
         <h1>Top Categories</h1>
       </div>
-      <div id="items2" class="flex flex-wrap ml-96  mb-44">
+      <div id="items2" class="flex flex-wrap ml-96  ">
         <div>
         <livewire:itemstyle6 imag="{{ URL::to('/images/image20.jpg') }}"/>
         </div>
@@ -329,29 +329,36 @@
         <div>
         <livewire:itemstyle6 imag="{{ URL::to('/images/image20.jpg') }}"/>
         </div>
-        <div>
+        <div class="mb-44">
         <livewire:itemstyle6 imag="{{ URL::to('/images/image20.jpg') }}"/>
         </div>
       </div>
 
-      <div class="text-center">
-        <img src="{{ URL::to('/images/Rectangle.png') }}">
       
-       <h1 class="absolute text-center ml-96  pl-64  -mt-80 text-4xl font-bold text-blue-800">Get Leatest Update By Subscribe 0ur Newslater</h1>
-       <button class="absolute -mt-60 text-center bg-pink-500 text-white p-4">Shop Now</button>
-      </div>
-
+        <div class="backimage ">
+          <div class=" ">
+            <div class="mt-32">
+            <h1 class="flex items-center justify-center text-4xl font-bold text-blue-800 ">
+            Get Leatest Update By Subscribe 0ur Newslater</h1>
+            </div>
+            <div class="flex items-center justify-center">
+            <button class="p-4 bg-pink-500 text-white mt-4">Shop Now</button>
+            </div>
+         </div>
+        </div>
+      
+    
     <div class="text-center text-4xl font-bold text-blue-800 ml-9 mt-32 mb-16">
         <h1>Leatest Blog</h1>
     </div>
-<div class="flex wrap-flex ml-96  mb-28">
+<div id="items1" class="flex flex-wrap ml-96  ">
   <div class="">
   <livewire:itemstyle7 imag="{{ URL::to('/images/image1.png') }}"/>
   </div>
   <div class="ml-11">
   <livewire:itemstyle7 imag="{{ URL::to('/images/image1.png') }}"/>
   </div>
-  <div class="ml-11">
+  <div class="ml-11 mb-28">
   <livewire:itemstyle7 imag="{{ URL::to('/images/image1.png') }}"/>
   </div>
 </div>

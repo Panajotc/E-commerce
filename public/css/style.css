@@ -3,6 +3,11 @@
   height: 670px;
 }
 
+.backimage {
+  background-image: url("../images/Rectangle.png");
+  height: 400px;
+}
+
 @media (max-width: 1910px){
 
 #navbar{
@@ -13,7 +18,7 @@
 }
 }
 
-@media (min-width: 414px){
+@media (max-width: 414px){
   #navbar{
     margin: 0px 20px 0px 20px;
   }
@@ -38,6 +43,13 @@
 
 #items2 .header{
   margin-top: 20px;
+}
+
+
+
+.ruci{
+  border: 2px solid rgb(248, 248, 248);
+
 }
 
 }
