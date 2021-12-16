@@ -1,0 +1,43 @@
+.swiper {
+  
+  height: 670px;
+}
+
+@media (max-width: 1910px){
+
+#navbar{
+  margin: 0px 208px 0px 208px;
+}
+#menu{
+  margin: 0px 208px 0px 208px;
+}
+}
+
+@media (min-width: 414px){
+  #navbar{
+    margin: 0px 20px 0px 20px;
+  }
+  #menu{
+    margin: 0px 20px 0px 20px;
+    grid-column-gap: 10px;
+  }
+
+
+#items1{
+  margin:0px 80px 0px 80px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  justify-content: center;
+}
+#items2{
+  margin:0px 20px 0px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  justify-content: center;
+}
+
+#items2 .header{
+  margin-top: 20px;
+}
+
+}
