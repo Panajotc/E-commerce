@@ -30,9 +30,13 @@
         </div>
 
         <div>
-            <button>Login<i class="far fa-user"></i></button>
+            <a href="{{ route('login') }}"> Log in <i class="far fa-user"></i> </a>
         </div>
 
+        <div>
+            <a href="{{ route('signup') }}"> Register <i class="far fa-user"></i> </a>
+        </div>
+        
         <div>
             <button>Wishlist<i class="far fa-heart"></i></button>
         </div>

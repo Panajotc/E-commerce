@@ -338,7 +338,7 @@
         <div class="backimage ">
           <div class=" ">
             <div class="mt-32">
-            <h1 class="flex items-center justify-center text-4xl font-bold text-blue-800 ">
+            <h1 class="flex items-center justify-center text-4xl font-bold pt-40 text-blue-800 ">
             Get Leatest Update By Subscribe 0ur Newslater</h1>
             </div>
             <div class="flex items-center justify-center">
