@@ -30,12 +30,23 @@
         </div>
 
         <div>
+            @guest
             <a href="{{ route('login') }}"> Log in <i class="far fa-user"></i> </a>
+            @endguest
         </div>
 
         <div>
+        @guest
+
             <a href="{{ route('signup') }}"> Register <i class="far fa-user"></i> </a>
+        @endguest
         </div>
+        <div>
+            @auth
+        <a href="#"> Log out <i class="far fa-user"></i> </a>
+        @endauth
+        </div>
+    
         
         <div>
             <button>Wishlist<i class="far fa-heart"></i></button>
