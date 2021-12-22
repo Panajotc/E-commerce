@@ -28,25 +28,28 @@
                 <option value="gbp">USD</option>
             </select>
         </div>
-
-        <div>
-            @guest
-            <a href="{{ route('login') }}"> Log in <i class="far fa-user"></i> </a>
-            @endguest
-        </div>
-
-        <div>
+      
+    <form action="{{ route ('logout') }}"  method="POST">
+     @csrf
         @guest
-
-            <a href="{{ route('signup') }}"> Register <i class="far fa-user"></i> </a>
-        @endguest
-        </div>
         <div>
-            @auth
-        <a href="#"> Log out <i class="far fa-user"></i> </a>
-        @endauth
+            <a href="{{ route('login') }}"> Log in <i class="far fa-user"></i> </a>
         </div>
-    
+        @endguest
+
+        @guest
+        <div>
+              <a href="{{ route('signup') }}"> Register <i class="far fa-user"></i> </a>
+            </div>
+            @endguest
+
+            @auth
+        <div>
+            <a href="#"> Log out <i class="far fa-user"></i> </a>
+        </div>
+        @endauth
+
+    </form>
         
         <div>
             <button>Wishlist<i class="far fa-heart"></i></button>

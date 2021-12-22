@@ -1,14 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use Illuminate\Http\Request;
+
+use App\Http\Controllers\Controller;
 use App\Models\User;
 
 class SignupController extends Controller
 {
     public function index (){
-        return view('signup');
+        return view('Auth/signup');
      }
      
      public function store(Request $request)
