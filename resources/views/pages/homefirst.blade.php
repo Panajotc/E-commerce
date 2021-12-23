@@ -142,9 +142,11 @@
        <h1>Featured Products</h1>
     </div>
     <div id="items1" class="flex flex-wrap ml-96 ">
+      @foreach($products as $product)
       <div class="ml-8">
-         <livewire:item imag="{{ URL::to('/images/image11.png') }}" name="Cantilever chair" code="Code - Y523201" pric="$42.00"/>
+         <livewire:item imag="{{$product->path_name}}" name="{{$product->name}}" code="Code - Y523201" pric="$42.00"/>
       </div>
+      @endforeach
       <div class="ml-8">
          <livewire:item imag="{{ URL::to('/images/image11.png') }}" name="Cantilever chair" code="Code - Y523201" pric="$42.00"/>
       </div>

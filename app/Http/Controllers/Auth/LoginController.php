@@ -22,12 +22,14 @@ class LoginController extends Controller
          'password' => 'required',
         ]);
 
-       if (!auth()->attempt($request->only('email', 'password'), $request->remember)) {
+       if (!auth()->attempt($request->only('email','password'), $request->remember)) {
           return back();
       }
-      // ->with('status','Invalid Log In details')
-      // auth()->attempt($request->only('email', 'password'));
+       // ->with('status','Invalid Log In details')
+       // auth()->attempt($request->only('email', 'password'));
        return redirect()->route('homefirst');
+
+
    }
    
 }

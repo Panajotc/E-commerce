@@ -1,6 +1,6 @@
 <div class="shadow-2xl">
   <div class="bg-gray-100 w-64">
-     <img src="{{$imag1}}" class="ml-10 pt-11">
+    <img src="../storage/product/{{$imag1}}" class="ml-10 pt-11">
   </div>
   <div>
     <p class="text-center text-pink-500">{{$name1}}</p>

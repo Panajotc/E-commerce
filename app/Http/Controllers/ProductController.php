@@ -8,15 +8,16 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-    public function create()
+    public function index()
     {
-        return view('products.create');
+        return view('products/create');
     }
     public function store(Request $request)
     {
         // Validate the inputs
         $request->validate([
             'name' => 'required',
+            'price' => 'required'
         ]);
 
         // ensure the request has a file before we attempt anything else.
@@ -32,12 +33,12 @@ class ProductController extends Controller
             // Store the record, using the new file hashname which will be it's new filename identity.
             $product = new Product([
                 "name" => $request->get('name'),
+                "price" => $request->get('price'),
                 "file_path" => $request->file->hashName()
             ]);
-            $product->save(); // Finally, save the record.
+            $product->save(); //  save the record.
         }
 
-        return view('products.create');
-
+        return view('products/create');
     }
 }

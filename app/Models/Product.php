@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+    public $timestamp=false;
+
     use HasFactory;
-    protected $fillable = ["name", "file_path", "created_at", "updated_at"];
+    protected $fillable = ["name","price", "file_path", "created_at", "updated_at"];
 }
