@@ -29,7 +29,7 @@
             </select>
         </div>
       
-    <form action="{{ route ('logout') }}"  method="POST">
+    <form action="{{ route ('logout') }}"  method="post">
      @csrf
         @guest
         <div>

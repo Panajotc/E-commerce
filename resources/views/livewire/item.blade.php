@@ -1,5 +1,5 @@
 <div class="shadow-2xl">
-  <div class="bg-gray-100 w-64">
+  <div class="bg-gray-100 w-64 ">
     <img src="../storage/product/{{$imag1}}" class="ml-10 pt-11">
   </div>
   <div>

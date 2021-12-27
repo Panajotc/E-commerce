@@ -10,6 +10,7 @@ class HomefirstController extends Controller
     
    public function index ()
    {
+      
       $products = Product::get();
       return view('pages/homefirst')->with(compact('products'));
    }
